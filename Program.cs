@@ -48,7 +48,8 @@ namespace ConsoleExcel1
             System.Runtime.InteropServices.Marshal.ReleaseComObject(excelApp);
 
             // 実行
-            System.Diagnostics.Process.Start(path);
+            System.Diagnostics.Process.Start(@"C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE", path);
+
 
         }
     }
