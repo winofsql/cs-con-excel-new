@@ -50,7 +50,6 @@ namespace ConsoleExcel1
             // 実行
             System.Diagnostics.Process.Start(@"C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE", path);
 
-
         }
     }
 }
