@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace ConsoleExcel1
+namespace cs_con_framework_excel_new
 {
     class Program
     {
@@ -48,8 +48,7 @@ namespace ConsoleExcel1
             System.Runtime.InteropServices.Marshal.ReleaseComObject(excelApp);
 
             // 実行
-            System.Diagnostics.Process.Start(@"C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE", path);
-
+            System.Diagnostics.Process.Start(path);
         }
     }
 }
