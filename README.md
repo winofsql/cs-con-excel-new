@@ -1,4 +1,4 @@
-# cs-console-excel-new
+# cs_con_framework_excel_new
 ブックを作成してセルに値をセットして Excel で起動
 
-.NET 5.0
+
