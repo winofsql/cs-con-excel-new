@@ -47,8 +47,6 @@ namespace cs_con_framework_excel_new
             // 解放
             System.Runtime.InteropServices.Marshal.ReleaseComObject(excelApp);
 
-            // 実行
-            System.Diagnostics.Process.Start(path);
         }
     }
 }
