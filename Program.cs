@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace cs_con_framework_excel_new
 {
@@ -47,6 +48,9 @@ namespace cs_con_framework_excel_new
             // 解放
             System.Runtime.InteropServices.Marshal.ReleaseComObject(excelApp);
 
+            // ファイルの種類によってアプリケーションを起動する
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("RunDLL32.EXE", $"url.dll,FileProtocolHandler {path}" );
+            Process.Start(processStartInfo);
         }
     }
 }
